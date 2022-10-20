@@ -1,0 +1,196 @@
+{
+	"info": {
+		"_postman_id": "d6f9c6e2-82c5-4697-8e50-cab93025aeac",
+		"name": "Examen",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10157037"
+	},
+	"item": [
+		{
+			"name": "RegistroCliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"cesar ruiz\",\r\n    \"email\":\"ceshum@ceshum.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://examen.pitayasoft.mx/api/User/Registro",
+					"protocol": "https",
+					"host": [
+						"examen",
+						"pitayasoft",
+						"mx"
+					],
+					"path": [
+						"api",
+						"User",
+						"Registro"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Limpiar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sku\" : \"219002300625\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://examen.pitayasoft.mx/api/User/BuscarProducto",
+					"protocol": "https",
+					"host": [
+						"examen",
+						"pitayasoft",
+						"mx"
+					],
+					"path": [
+						"api",
+						"User",
+						"BuscarProducto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Terminar Registro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"IdRegistro\" : \"882d3b7a-0756-4d92-9f25-2967c9b2b66d\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://examen.pitayasoft.mx/api/User/TerminarRegistro",
+					"protocol": "https",
+					"host": [
+						"examen",
+						"pitayasoft",
+						"mx"
+					],
+					"path": [
+						"api",
+						"User",
+						"TerminarRegistro"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BuscarProducto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sku\" : \"219002300625\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://examen.pitayasoft.mx/api/User/BuscarProducto",
+					"protocol": "https",
+					"host": [
+						"examen",
+						"pitayasoft",
+						"mx"
+					],
+					"path": [
+						"api",
+						"User",
+						"BuscarProducto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RegistrarProductos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sku\" : \"219002300625\",\r\n    \"Idproducto\":\"86458\",\r\n    \"Idtalla\":\"669\",\r\n    \"Idregistro\":\"ea1f13dc-9d82-419d-9d23-9899e4e0bf61\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://examen.pitayasoft.mx/api/User/AgregarProducto",
+					"protocol": "https",
+					"host": [
+						"examen",
+						"pitayasoft",
+						"mx"
+					],
+					"path": [
+						"api",
+						"User",
+						"AgregarProducto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "QuitarProductos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Idproducto\":\"86459\",\r\n    \"Idregistro\":\"ea1f13dc-9d82-419d-9d23-9899e4e0bf61\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://examen.pitayasoft.mx/api/User/QuitarProducto",
+					"protocol": "https",
+					"host": [
+						"examen",
+						"pitayasoft",
+						"mx"
+					],
+					"path": [
+						"api",
+						"User",
+						"QuitarProducto"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
