@@ -10,7 +10,7 @@
                 <div class="card shadow-lg p-2">
                     <div class="d-flex justify-content-end">
                         <div class="close-product d-flex justify-content-center align-items-center">
-                            <i class="fa-solid fa-xmark" @click.prevent="deleteProduct(cart.idProducto)"></i>
+                            <i class="fa-solid fa-xmark cursor" @click.prevent="deleteProduct(cart.idProducto)"></i>
                         </div>
                     </div>
                     
@@ -377,5 +377,9 @@ export default {
 
     .modal {
         top: 20rem !important;
+    }
+
+    .cursor {
+        cursor: pointer;
     }
 </style>
