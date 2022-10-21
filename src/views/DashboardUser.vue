@@ -194,11 +194,13 @@ export default {
             }) 
             .then(response => {
                 console.log(response.data)
+
                 console.log(Idproducto)
                 console.log(this.$localStorage.get('id'))
             })
             .catch(error => {
                 console.error(error)
+
                 console.log(Idproducto)
                 console.log(this.$localStorage.get('id'))
             })
